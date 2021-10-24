@@ -1,3 +1,5 @@
+package HomeWork_1_7;
+
 public class Cat extends Animal{
     private static final int MAX_RUN_DISTANCE = 200;
     private static final int MAX_SWIM_DISTANCE = -1;

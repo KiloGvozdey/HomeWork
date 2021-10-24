@@ -12,8 +12,8 @@ public class Main {
         phoneBook.add("Vladimir", 332);
         phoneBook.add("Sam", 223);
         phoneBook.add("Sam", 556);
-        phoneBook.get("Ilya");
-        phoneBook.get("Sam");
+        System.out.println(phoneBook.get("Ilya"));
+        System.out.println(phoneBook.get("gfdsfg"));
         phoneBook.get("Vladimir");
     }
 }

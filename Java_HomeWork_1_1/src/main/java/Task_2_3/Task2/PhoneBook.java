@@ -9,21 +9,21 @@ public class PhoneBook {
 
 
     public void add(String surname, int phoneNumber){
-        for (String s : this.phoneNumberList.keySet()) {
+        for (String s : phoneNumberList.keySet()) {
             if(s.equals(surname)){
-                ArrayList<Integer> list= this.phoneNumberList.get(surname);
+                ArrayList<Integer> list= phoneNumberList.get(surname);
                 list.add(phoneNumber);
-                this.phoneNumberList.put(s, list);
+                phoneNumberList.put(s, list);
                 return;
             }
         }
         ArrayList<Integer> list = new ArrayList<>();
         list.add(phoneNumber);
-        this.phoneNumberList.put(surname, list);
+        phoneNumberList.put(surname, list);
     }
-    public void get(String surname){
-        System.out.printf("Человек под фамилией %s имеет следующие номера телефонов: %n", surname);
-        this.phoneNumberList.get(surname).forEach(System.out::println);
+    public ArrayList<Integer> get(String surname){
+
+        return phoneNumberList.getOrDefault(surname, null);
 
     }
 }

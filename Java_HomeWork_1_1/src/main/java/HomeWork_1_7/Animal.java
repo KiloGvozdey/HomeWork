@@ -1,3 +1,5 @@
+package HomeWork_1_7;
+
 public abstract class Animal {
     String name;
     private final int maxSwimDistance;

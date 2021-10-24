@@ -1,3 +1,5 @@
+package HomeWork_1_7;
+
 public class Dog extends Animal{
 
     private static final int MAX_RUN_DISTANCE = 200;

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22996d98-d9ee-46d1-b8ff-4df5141e70c4" name="Default Changelist" comment="" />
+    <list default="true" id="22996d98-d9ee-46d1-b8ff-4df5141e70c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_7/Plate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/DigitsButtonActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/DigitsButtonActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/EqualActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/EqualActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/MyFirstFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeWork_1_8/MyFirstFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_3/Task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_3/Task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_3/Task2/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_3/Task2/PhoneBook.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +42,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_3.Task2.Main" />
+      <module name="Java_HomeWork_1_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_2_3.Task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
