@@ -22,8 +22,6 @@ public class PhoneBook {
         phoneNumberList.put(surname, list);
     }
     public ArrayList<Integer> get(String surname){
-
         return phoneNumberList.getOrDefault(surname, null);
-
     }
 }

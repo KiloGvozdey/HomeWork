@@ -13,7 +13,6 @@ public class Main {
         phoneBook.add("Sam", 223);
         phoneBook.add("Sam", 556);
         System.out.println(phoneBook.get("Ilya"));
-        System.out.println(phoneBook.get("gfdsfg"));
         phoneBook.get("Vladimir");
     }
 }
