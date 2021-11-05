@@ -1,10 +1,12 @@
-package Task_2_6;
+package Task_2_7;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.Socket;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -27,13 +29,15 @@ public class Client {
     private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
+    private String nameWindow;
 
 
-    public Client() {
+    public Client(String nameWindow) {
+        this.nameWindow = nameWindow;
         //1 отрисовка фрейма клиента
         mainFrame = new JFrame();
         mainFrame.setLayout(new BoxLayout(mainFrame.getContentPane(), BoxLayout.Y_AXIS));
-        mainFrame.setTitle("Онлайн-чат начало=)");
+        mainFrame.setTitle(nameWindow);
         mainFrame.setBounds(new Rectangle(30, 30, 450, 700));
         mainFrame.setResizable(false);
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
