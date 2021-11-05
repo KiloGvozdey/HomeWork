@@ -1,16 +1,19 @@
 package Task_2_5;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
 
 
-    public static void main(String[] args) {
-        if(Arrays.equals(doSingleThread(), doDoubleThread())) System.out.println("Массивы равны");
-        else System.out.println("Подумай ещё");
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(5000);
+        doDoubleThread();
+        Thread.sleep(2000);
+        doSingleThread();
     }
-    static float[] doSingleThread(){
+    synchronized static void doSingleThread(){
         final int size = 10000000;
         float[] arr = new float[size];
         Arrays.fill(arr, 1);
@@ -20,10 +23,10 @@ public class Main {
         }
         long finish = System.currentTimeMillis();
         System.out.println("Время в однопотоке составило: " + (finish - start) + " миллисекунд");
-        return arr;
-    }
 
-    static float[] doDoubleThread(){
+            }
+
+    synchronized static void doDoubleThread(){
         final int size = 10000000;
         final int h = size / 2;
         float[] arr = new float[size];
@@ -58,6 +61,5 @@ public class Main {
         }
         long finish = System.currentTimeMillis();
         System.out.println("Время в многопотоке составило: " + (finish - start) + " миллисекунд");
-        return arr;
     }
 }
