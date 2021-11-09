@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22996d98-d9ee-46d1-b8ff-4df5141e70c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/ClientStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_7/ServerStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/ClientConnectors/ChatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/ClientConnectors/ChatConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/ChatArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/ChatFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/WriteArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ServerStarter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_6/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_6/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_6/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_6/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_6/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_6/Client.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ru" />
   </component>
   <component name="RecentsManager">
@@ -55,6 +60,7 @@
       <recent name="Task_2_7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_8" />
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_7" />
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_6" />
     </key>
@@ -64,13 +70,13 @@
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ClientHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_7.ClientHandler" />
+  <component name="RunManager" selected="Application.ClientStarter1">
+    <configuration name="ClientStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_7.*" />
+          <option name="PATTERN" value="Task_2_8.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_7.ClientStart" />
+    <configuration name="ClientStarter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter1" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_7.*" />
+          <option name="PATTERN" value="Task_2_8.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_5.Main" />
+    <configuration name="ClientStarter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter2" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_5.*" />
+          <option name="PATTERN" value="Task_2_8.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_6.ServerMain" />
+    <configuration name="ClientStarter3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter3" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_6.*" />
+          <option name="PATTERN" value="Task_2_8.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_7.ServerStart" />
+    <configuration name="ServerStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ServerStarter" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_7.*" />
+          <option name="PATTERN" value="Task_2_8.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ClientStart" />
-        <item itemvalue="Application.ServerStart" />
-        <item itemvalue="Application.ServerMain" />
-        <item itemvalue="Application.ClientHandler" />
+        <item itemvalue="Application.ClientStarter1" />
+        <item itemvalue="Application.ServerStarter" />
+        <item itemvalue="Application.ClientStarter3" />
+        <item itemvalue="Application.ClientStarter2" />
+        <item itemvalue="Application.ClientStarter" />
       </list>
     </recent_temporary>
   </component>
