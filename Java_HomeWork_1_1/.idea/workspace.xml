@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22996d98-d9ee-46d1-b8ff-4df5141e70c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/ClientConnectors/ChatAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/ClientConnectors/ChatConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/ChatArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/ChatFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/gui/WriteArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ServerStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/FirstTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/SecondTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Orange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_8/Server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_8/Server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_8/starers/ClientStarter1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_8/starers/ClientStarter1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,20 +68,7 @@
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientStarter1">
-    <configuration name="ClientStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter" />
-      <module name="Java_HomeWork_1_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Task_2_8.starers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="ClientStarter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter1" />
       <module name="Java_HomeWork_1_1" />
@@ -97,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientStarter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter2" />
+    <configuration name="FirstTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.FirstTask" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_8.starers.*" />
+          <option name="PATTERN" value="Level_3.Task_3_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientStarter3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter3" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_2_3.Task2.Main" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_8.starers.*" />
+          <option name="PATTERN" value="Task_2_3.Task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +108,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ServerStarter" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.Task_3.Main" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_8.starers.*" />
+          <option name="PATTERN" value="Level_3.Task_3_1.Task_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.SecondTask" />
+      <module name="Java_HomeWork_1_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Level_3.Task_3_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SecondTask" />
+        <item itemvalue="Application.FirstTask" />
         <item itemvalue="Application.ClientStarter1" />
-        <item itemvalue="Application.ServerStarter" />
-        <item itemvalue="Application.ClientStarter3" />
-        <item itemvalue="Application.ClientStarter2" />
-        <item itemvalue="Application.ClientStarter" />
       </list>
     </recent_temporary>
   </component>
