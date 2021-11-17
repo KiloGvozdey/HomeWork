@@ -1,7 +1,7 @@
 package Level_3.Task_3_1.Task_3;
 
 public class Fruit {
-    public Fruit(float weight) {
+    public Fruit(Float weight) {
         this.weight = weight;
     }
 

@@ -5,18 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22996d98-d9ee-46d1-b8ff-4df5141e70c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/FirstTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/SecondTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_36_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlite.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/ClientConnectors/ChatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/ClientConnectors/ChatConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/SQL_Lib/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/SQL_Lib/ClientsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/SQL_Lib/DBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/SQL_Lib/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/Server/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/Server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/Server/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/gui/ChatArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/gui/ChatFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/gui/WriteArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/starers/ClientStarter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/starers/ClientStarter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/starers/ClientStarter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_2/starers/ServerStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlite.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/Server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_2_8/starers/ClientStarter1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_8/Server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_8/Server/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_2_8/starers/ClientStarter1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_2_8/starers/ClientStarter1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Level_3/Task_3_1/Task_3/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level_3/Task_3_1/Task_3/Orange.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +64,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ru" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Level3" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4541213" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Task_2_7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\resources" />
+      <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Level_3\Task_3_2" />
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_8" />
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_7" />
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_6" />
@@ -68,13 +91,13 @@
       <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\Java_HomeWork_1_1\src\main\java\Task_2_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ClientStarter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_8.starers.ClientStarter1" />
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_2.starers.ClientStarter1" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_8.starers.*" />
+          <option name="PATTERN" value="Level_3.Task_3_2.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.FirstTask" />
+    <configuration name="ClientStarter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_2.starers.ClientStarter2" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Level_3.Task_3_1.*" />
+          <option name="PATTERN" value="Level_3.Task_3_2.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task_2_3.Task2.Main" />
+    <configuration name="ClientsService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_2.SQL_Lib.ClientsService" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task_2_3.Task2.*" />
+          <option name="PATTERN" value="Level_3.Task_3_2.SQL_Lib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +132,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.Task_3.Main" />
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_2.SQL_Lib.Main" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Level_3.Task_3_1.Task_3.*" />
+          <option name="PATTERN" value="Level_3.Task_3_2.SQL_Lib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_1.SecondTask" />
+    <configuration name="ServerStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level_3.Task_3_2.starers.ServerStarter" />
       <module name="Java_HomeWork_1_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Level_3.Task_3_1.*" />
+          <option name="PATTERN" value="Level_3.Task_3_2.starers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SecondTask" />
-        <item itemvalue="Application.FirstTask" />
+        <item itemvalue="Application.ClientsService" />
+        <item itemvalue="Application.ClientStarter2" />
         <item itemvalue="Application.ClientStarter1" />
+        <item itemvalue="Application.ServerStarter" />
       </list>
     </recent_temporary>
   </component>
@@ -166,5 +189,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

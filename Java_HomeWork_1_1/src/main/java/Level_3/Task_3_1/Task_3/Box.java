@@ -13,11 +13,11 @@ public class Box <T extends Fruit>{
     }
 
     public float getWeight(){
-        float weight = 0.0F;
+        float result = 0.0F;
         for (T t : list) {
-            weight += t.getWeight();
+            result += t.getWeight();
         }
-        return weight;
+        return result;
     }
     public void addToBox(T t){
         list.add(t);
