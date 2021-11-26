@@ -1,0 +1,7 @@
+Приветствуем тебя [User2]
+User[User3]: logged in.
+[user5]: dfgf	23:57
+Приветствуем тебя [User2]
+User[User3]: logged in.
+[user5]: hi	23:59
+Сообщение от пользователя [user5] hi 23:59 
