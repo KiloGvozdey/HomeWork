@@ -14,6 +14,11 @@ public class ChatServer {
     private ServerSocket serverSocket;
     private volatile Set<ClientHandler> loggedClients;
     private Scanner scanner;
+
+    public ExecutorService getExecutorService() {
+        return executorService;
+    }
+
     private ExecutorService executorService;
 
 
