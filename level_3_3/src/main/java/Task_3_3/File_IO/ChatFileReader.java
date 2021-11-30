@@ -1,30 +1,71 @@
 package Task_3_3.File_IO;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.Arrays;
+import java.util.List;
 
 public class ChatFileReader {
-    private final File file;
+    private final RandomAccessFile randomAccessFile;
 
-    private final String userName;
-    private final ArrayList<String> strings = new ArrayList<>();
-    public ChatFileReader(String userName) {
-        this.file = new File(String.format("Chat_(%s).txt", userName));
-        this.userName = userName;
+    public RandomAccessFile getRandomAccessFile() {
+        return randomAccessFile;
     }
 
-    public ArrayList<String> read(){
-        try(BufferedReader reader = new BufferedReader(new FileReader(this.file))){
-            while (reader.ready()){
-                strings.add(reader.readLine());
+    public ChatFileReader(String userName) throws FileNotFoundException{
+            this.randomAccessFile = new RandomAccessFile(String.format("Chat_(%s).txt", userName), "r");
+    }
+
+    public List<String> read(int position){
+        StringBuilder stringBuilder = new StringBuilder("");
+        try (randomAccessFile){
+            randomAccessFile.seek(position);
+            int i = randomAccessFile.read();
+            while (i != -1){
+                stringBuilder.append((char) i);
+                i = randomAccessFile.read();
             }
-            return strings;
-        } catch (IOException e){
-            throw new RuntimeException("SWW during a writing in file");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return Arrays.asList(stringBuilder.toString().split("\n"));
     }
 
-    public File getFile() {
-        return file;
+    public int getStartPosition(){
+        int count = 0;
+        int startPos;
+        int startPosChar = 0;
+        try (randomAccessFile){
+            randomAccessFile.seek(0);
+           int i = randomAccessFile.read();
+            while (i != -1){
+                if((char) i == '\n') count++;
+                i = randomAccessFile.read();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(count < 100){
+            return startPosChar;
+        } else {
+            startPos = count - 100;
+            count = 0;
+
+            try {
+                randomAccessFile.seek(0);
+                int i = randomAccessFile.read();
+                while (i != -1){
+                    startPosChar++;
+                    if((char) i == '\n') ++count;
+                    i = randomAccessFile.read();
+                    if(count > startPos) break;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return startPosChar;
+        }
+
     }
 }

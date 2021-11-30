@@ -5,10 +5,7 @@ import Task_3_3.File_IO.ChatFileWriter;
 import Task_3_3.SQL_Lib.Client;
 import Task_3_3.SQL_Lib.ClientsService;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.List;
@@ -31,7 +28,7 @@ public class ClientHandler {
     }
 
 
-    public ClientHandler(Socket clientSocket, ChatServer server) {
+    public ClientHandler(Socket clientSocket, ChatServer server) throws FileNotFoundException {
         this.clientSocket = clientSocket;
         this.server = server;
         openDataStreams();
@@ -39,7 +36,7 @@ public class ClientHandler {
         this.chatFileReader = new ChatFileReader(name);
         this.chatFileWriter = new ChatFileWriter(name);
         if(isConnected) {
-            showHistory(chatFileReader.read());
+            showHistory(chatFileReader.read(chatFileReader.getStartPosition()));
             setSocketTimeout(0);
             sendMessage("Приветствуем тебя [" + this.name + "]");
             listenMessage();

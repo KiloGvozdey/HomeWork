@@ -6,16 +6,21 @@ import java.net.Socket;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class ChatServer {
     private ServerSocket serverSocket;
     private volatile Set<ClientHandler> loggedClients;
     private Scanner scanner;
+    private ExecutorService executorService;
+
 
 
     public ChatServer() {
         try {
+            executorService = Executors.newCachedThreadPool();
             loggedClients = new HashSet<>();
             scanner = new Scanner(System.in);
             this.serverSocket = new ServerSocket(8080);
@@ -32,7 +37,7 @@ public class ChatServer {
             System.out.println("Ожидание подключения пользователя");
                 Socket client = serverSocket.accept();
                 System.out.println("Подключение прошло успешно, запускаю новый поток");
-                new Thread(() -> new ClientHandler(client, this)).start();
+                executorService.submit(() -> new ClientHandler(client, this));
 
         }
     }
