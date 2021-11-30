@@ -144,6 +144,7 @@ public class ClientHandler {
             out.close();
             clientSocket.close();
             server.removeClients(this);
+            server.getExecutorService().shutdown();
             System.out.println("Connection close complete");
         } catch (IOException e){
             System.out.println("Close connection failed");
