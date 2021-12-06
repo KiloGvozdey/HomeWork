@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5f5642c-5772-4802-8970-b926b8172687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java_HomeWork_1_1/src/main/java/Task_2_4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_HomeWork_1_1/src/main/java/Task_2_4/out/production/Task_2_4/Task_2_4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task_3_3/SQL_Lib/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat_(user5).txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chat_(user5).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_3_3/File_IO/ChatFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_3_3/File_IO/ChatFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task_3_3/Server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_3_3/Server/ChatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task_3_3/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_3_3/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_3_3/starers/ClientStarter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_3_3/starers/ClientStarter1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/File_IO/ChatFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_3_3/File_IO/ChatFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/File_IO/MAin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/SQL_Lib/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_3_3/SQL_Lib/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/SQL_Lib/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/Server/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_3_3/Server/ChatServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/Server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_3_3/Server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Task_3_3/starers/ClientStarter1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task_3_3/starers/ClientStarter1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +45,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/MyLibraries/sqlite-jdbc-3.36.0.2.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4541213" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ikarpov2\OneDrive - Schlumberger\Desktop\My Repo\Java_GeekBrains_HomeWork\HomeWork\level_3_3\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientStarter1">
     <configuration name="ClientStarter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task_3_3.starers.ClientStarter1" />
       <module name="level_3_3" />
@@ -115,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ClientStarter1" />
         <item itemvalue="Application.ServerStarter" />
-        <item itemvalue="Application.MAin" />
         <item itemvalue="Application.ClientStarter3" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MAin" />
       </list>
     </recent_temporary>
   </component>

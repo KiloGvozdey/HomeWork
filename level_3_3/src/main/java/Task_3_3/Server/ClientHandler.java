@@ -4,6 +4,8 @@ import Task_3_3.File_IO.ChatFileReader;
 import Task_3_3.File_IO.ChatFileWriter;
 import Task_3_3.SQL_Lib.Client;
 import Task_3_3.SQL_Lib.ClientsService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.net.Socket;
@@ -22,13 +24,14 @@ public class ClientHandler {
     private Client client;
     private final ChatFileReader chatFileReader;
     private final ChatFileWriter chatFileWriter;
+    private static Logger logger = LogManager.getLogger(ClientHandler.class);
 
     public String getName() {
         return name;
     }
 
 
-    public ClientHandler(Socket clientSocket, ChatServer server) throws FileNotFoundException {
+    public ClientHandler(Socket clientSocket, ChatServer server){
         this.clientSocket = clientSocket;
         this.server = server;
         openDataStreams();
@@ -38,7 +41,7 @@ public class ClientHandler {
         if(isConnected) {
             showHistory(chatFileReader.read(chatFileReader.getStartPosition()));
             setSocketTimeout(0);
-            sendMessage("Приветствуем тебя [" + this.name + "]");
+            sendMessage("Hello [" + this.name + "]");
             listenMessage();
         } else closeConnection();
 
@@ -48,7 +51,7 @@ public class ClientHandler {
         try{
             doPerformAuthentication();
         } catch (IOException e){
-            System.out.println("SWW");
+            logger.error("SWW during authentication");
         }
     }
 
@@ -68,11 +71,14 @@ public class ClientHandler {
                         name = client.getUserName();
                         server.addClients(this);
                         isSuccess.set(true);
+                        logger.info(String.format("User[%s]: logged in.", client.getUserName()));
                     } else {
                         sendMessage("Current username is already occupied.");
+                        logger.error("Current username is already occupied.");
                     }
                 } else {
                     sendMessage("BadCredentials");
+                    logger.error("BadCredentials");
                 }
             }
             if(isSuccess.get()) {
@@ -87,9 +93,9 @@ public class ClientHandler {
         try {
             in = new DataInputStream(clientSocket.getInputStream());
             out = new DataOutputStream(clientSocket.getOutputStream());
-            System.out.println("Подключение потоков успешно выполнено");
+            logger.info("Connection stream complete");
         } catch (IOException e ){
-            System.out.println("Ошибка в ходе подключения потоков");
+            logger.error("Connection stream failed");
         }
     }
 
@@ -112,7 +118,7 @@ public class ClientHandler {
                 closeConnection();
             } else if (message.startsWith("/u")){
                 this.name = clientsService.updateName(client, message);
-                sendMessage("Имя пользователя успешно изменено на " + "[" + this.name + "]");
+                sendMessage("Change username to " +  "[" + this.name + "]" + " successfully");
                 chatFileWriter.getFile().renameTo(new File(String.format("Chat_(%s).txt", name)));
             } else server.broadcastMessage(message, this.name);
         } catch (IOException e){
@@ -130,7 +136,7 @@ public class ClientHandler {
 
     private void sendTargetMessage(String message){
         String[] strings = message.split("\\s");
-        StringBuilder targetMessage = new StringBuilder("Сообщение от пользователя [" + this.name + "] ");
+        StringBuilder targetMessage = new StringBuilder("Message from [" + this.name + "] ");
         for (int i = 2; i < strings.length; i++) {
             targetMessage.append(strings[i]).append(" ");
         }
@@ -144,10 +150,9 @@ public class ClientHandler {
             out.close();
             clientSocket.close();
             server.removeClients(this);
-            server.getExecutorService().shutdown();
-            System.out.println("Connection close complete");
+            logger.info("Connection close complete");
         } catch (IOException e){
-            System.out.println("Close connection failed");
+            logger.error("Close connection failed");
         }
     }
 
@@ -160,21 +165,12 @@ public class ClientHandler {
     }
 
     private void showHistory(List<String> list){
-        try {
-
-            if(list.size() <= 100) {
-                for (String s : list) {
-                    out.writeUTF(s);
-                }
+        for (String s : list) {
+            try {
+                out.writeUTF(s);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            else {
-                int startPos = list.size() - 100;
-                for(;startPos < list.size(); startPos++){
-                    out.writeUTF(list.get(startPos));
-                }
-            }
-        } catch (IOException e){
-            throw new RuntimeException("SWW during a show history");
         }
     }
 }
