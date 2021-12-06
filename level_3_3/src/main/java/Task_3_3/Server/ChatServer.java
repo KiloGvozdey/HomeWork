@@ -1,5 +1,8 @@
 package Task_3_3.Server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -14,12 +17,13 @@ public class ChatServer {
     private ServerSocket serverSocket;
     private volatile Set<ClientHandler> loggedClients;
     private Scanner scanner;
+    private static Logger log = LogManager.getLogger(ChatServer.class);
+
+    private ExecutorService executorService;
 
     public ExecutorService getExecutorService() {
         return executorService;
     }
-
-    private ExecutorService executorService;
 
 
 
@@ -32,16 +36,16 @@ public class ChatServer {
             tryConnectionUsers();
 
         } catch (IOException e){
-            System.out.println("SWW");
+            log.error("SWW during a starting server");
         }
 
     }
 
     private void tryConnectionUsers() throws IOException{
         while (true){
-            System.out.println("Ожидание подключения пользователя");
+            log.info("Waiting connection from users");
                 Socket client = serverSocket.accept();
-                System.out.println("Подключение прошло успешно, запускаю новый поток");
+                log.info("Connection successfully, starting a new thread");
                 executorService.submit(() -> new ClientHandler(client, this));
 
         }
@@ -76,7 +80,7 @@ public class ChatServer {
        if(loggedClients.stream().anyMatch(clientHandler -> clientHandler.getName().equals(toUser))){
            loggedClients.stream().filter(clientHandler -> clientHandler.getName().equals(toUser)).findFirst().get().sendMessage(message);
        }
-       else loggedClients.stream().filter(clientHandler -> clientHandler.getName().equals(fromUser)).findFirst().get().sendMessage("Пользователь с ником " + toUser + " не найден.");
+       else loggedClients.stream().filter(clientHandler -> clientHandler.getName().equals(fromUser)).findFirst().get().sendMessage(toUser + " not found.");
 }
 
 

@@ -1,25 +1,20 @@
 package Task_3_3.File_IO;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Arrays;
 import java.util.List;
 
 public class ChatFileReader {
-    private final RandomAccessFile randomAccessFile;
+    private final String userName;
 
-    public RandomAccessFile getRandomAccessFile() {
-        return randomAccessFile;
-    }
-
-    public ChatFileReader(String userName) throws FileNotFoundException{
-            this.randomAccessFile = new RandomAccessFile(String.format("Chat_(%s).txt", userName), "r");
+    public ChatFileReader(String userName){
+            this.userName = userName;
     }
 
     public List<String> read(int position){
         StringBuilder stringBuilder = new StringBuilder("");
-        try (randomAccessFile){
+        try (RandomAccessFile randomAccessFile = new RandomAccessFile(String.format("Chat_(%s).txt", userName), "r")){
             randomAccessFile.seek(position);
             int i = randomAccessFile.read();
             while (i != -1){
@@ -36,7 +31,7 @@ public class ChatFileReader {
         int count = 0;
         int startPos;
         int startPosChar = 0;
-        try (randomAccessFile){
+        try (RandomAccessFile randomAccessFile = new RandomAccessFile(String.format("Chat_(%s).txt", userName), "r")){
             randomAccessFile.seek(0);
            int i = randomAccessFile.read();
             while (i != -1){
@@ -52,7 +47,7 @@ public class ChatFileReader {
             startPos = count - 100;
             count = 0;
 
-            try {
+            try (RandomAccessFile randomAccessFile = new RandomAccessFile(String.format("Chat_(%s).txt", userName), "r")){
                 randomAccessFile.seek(0);
                 int i = randomAccessFile.read();
                 while (i != -1){
@@ -64,6 +59,7 @@ public class ChatFileReader {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            System.out.println(startPosChar);
             return startPosChar;
         }
 
